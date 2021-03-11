@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="public/FontsGothampro/stylesheet.css">
+</head>
+<body>
+	<div class="logo-box">
+			<img src="public/img/messenger.png">
+	</div>
+	<div class="container authorization" id="authorization">
+		<form>
+			<p>Войти</p>
+			<input type="email" name="email" placeholder="Введите E-Mail">
+			<input type="password" name="password" placeholder="Введите пароль">
+			<div class="button-box">
+				<button type="button">Войти</button>
+				<button type="button" onclick="transitionRegistration()">Регистрация</button>
+			</div>
+		</form>
+	</div>
+
+	<div class="container registration" id="registration">
+		<form method="post">
+			<p>Регистрация</p>
+			<input type="text" name="name" placeholder="Введите никнейм">
+			<input type="email" name="email" placeholder="Введите E-Mail">
+			<input type="password" name="password" placeholder="Введите пароль">
+			<div class="button-box-two">
+				<button type="button" onclick="transitionAuthorization()" class="register">Зарегистрироваться</button>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="public/scripts/main.js"></script>
+</body>
+</html>
